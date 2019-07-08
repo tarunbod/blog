@@ -1,0 +1,6 @@
+{
+    "database": {
+        "url": "mongodb://localhost/test"
+    },
+    "blog_name": "Tarun's Blog"
+}

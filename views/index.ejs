@@ -7,17 +7,17 @@
   </head>
   <body>
     <div class="container">
-      <h1>Tarun's Blog</h1>
+      <h1><%= title %></h1>
       <% if (posts.length == 0) { %>
-        <h5>No posts yet. Check back later!</h5>
+        <h5 class="center">No posts yet. Check back later!</h5>
       <% } else { %>
         <% for (var i = 0; i < posts.length; i++) { %>
           <% post = posts[i] %>
           <% if (i != 0) { %>
             <hr>
           <% } %>
-          <h4><u><%= post.title %></u></h4>
-          <h5>Posted on <%= post.postDate.toLocaleDateString() %></h5>
+          <h4><a href="/view_post?id=<%= post.id %>"><%= post.title %></a></h4>
+          <h5><i>Posted on <%= post.postDate.toLocaleDateString() %></i></h5>
           <p><%= post.preview() %></p>
         <% } %>
       <% } %>

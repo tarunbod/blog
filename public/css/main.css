@@ -1,3 +1,10 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 body, html {
   padding: 0;
   margin: 0;
@@ -70,5 +77,47 @@ p {
 }
 
 a {
-  color: #00B7FF;
+  color: rgb(0, 33, 46);
+}
+
+input[type='text'], textarea {
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  padding: 5px;
+  font-family: monospace;
+  font-size: 16px;
+  width: 100%;
+}
+
+textarea {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  max-width: 100%;
+  min-width: 100%;
+  height: 300px;
+}
+
+button {
+  padding: 5px;
+  color: white;
+  background-color: rgb(0, 56, 82);
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 80px;
+  font-weight: bold;
+  align-self: flex-end;
+}
+
+p {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+button:active {
+  background-color: rgb(0, 34, 49);
+}
+
+.center {
+  text-align: center;
 }
